@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Custumer Satisfaction Survey</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StylesForm.css">
+  </head>
+  <body>
+    <!--
+    SUBMETER NO GITHUB
+    ADAPTAR FORM PARA GANHAR CERTIFICADO
+    -->
+    <div class="container">
+
+      <h2>Custumer Satisfaction Survey</h2>
+      <img src="img/custumerSatisfaction.png">
+      <p>Thank you for contributing to our platform</p>
+
+      <form>
+        <label for="name">Name</label>
+        <input id="name" class="field" name="name" type="text" placeholder="Enter your name" maxlength="30" minlength="3" pattern="[a-zA-Z\s]+" required>
+        
+        <label for="email">Email</label>
+        <input id="email" class="field" name="email" type="email" placeholder="Enter your email" pattern="^[\w._-]+@[\w._-]+\.[\w]+" required>
+        
+        <label for="age">Age</label>
+        <input id="age" class="field" name="age" type="number" placeholder="Enter your age" max="120" min="0" required>
+
+        <label for="sex">Gender</label>
+        <select id="sex" name="sex" class="field" required>
+          <option value="" disabled selected hidden>Select your gender</option>
+          <option value="M">Masculine</option>
+          <option value="F">Feminine</option>
+          <option value="O">Other</option>
+        </select>
+          
+        <label>How did you find us ?</label>
+        <div class="in_col">
+          <label><input name="selection" type="checkbox" value="instagram">Instagram</label>
+          <label><input name="selection" type="checkbox" value="facebook">Facebook</label>
+          <label><input name="selection" type="checkbox" value="tiktok">TikTok</label>
+          <label><input name="selection" type="checkbox" value="other">Other</label>
+        </div>
+
+        <label for="state">Select your state:</label>
+        <select id="state" class="field" name="state" required>
+          <option value="" disabled selected hidden>select your state</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>  
+        </select>
+      
+        <div class="in_line">
+          <label>What is your level of satisfaction with the platform ?</label>
+          <label><input name="option" type="radio" value="satisfied"> &#x1F600</label>
+          <label><input name="option" type="radio" value="neutral"> &#x1F610</label>
+          <label><input name="option" type="radio" value="dissatisfied"> &#x1F61E</label>
+          <label><input name="option" type="radio" value="very_dissatisfied"> &#x1F620</label>
+        </div>
+
+        <label>How can I help you ?</label>
+        <div class="in_col">
+          <label><input name="selection" type="checkbox" value="complaint">Make a complaint</label>
+          <label><input name="selection" type="checkbox" value="help">ask for help</label>
+          <label><input name="selection" type="checkbox" value="return">Return a product</label>
+          <label><input name="selection" type="checkbox" value="prices">Search prices</label>
+          <label><input name="selection" type="checkbox" value="update_info">Update information</label>
+          <label><input name="selection" type="checkbox" value="purchase">Make a purchase</label>
+          <label><input name="selection" type="checkbox" value="other">Other</label>
+        </div>
+        
+        <label for="suggestions">Suggestions:</label>
+        <textarea id="suggestions" class="field" name="suggestions" type="textarea" rows="4" placeholder=" How can we improve ?" required></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+  <footer>
+    <p>© 2025 Todos os direitos reservados</p>
+  </footer>
+</html>
